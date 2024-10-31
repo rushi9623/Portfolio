@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import NavBar from './components/Navbar';  // Assuming NavBar is inside the 'components' folder
+import Home from './sections/Home';
+import About from './sections/About';
+import Experience from './sections/Experience';
+import Projects from './sections/Projects';
+import Skills from './sections/Skills';
+import Contact from './sections/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <AnimatedComponent/> */}
+      <NavBar />
+      <Home />
+      <About />
+      <Experience/>
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
   );
 }
